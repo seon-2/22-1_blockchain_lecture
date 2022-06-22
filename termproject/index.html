@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <script src="bower_components/web3/dist/web3.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="auction.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <div id="genesisTag">
+      <div id="imageLink"></div>
+      <img src="" alt="" />
+      <br />
+      <br />
+      <table>
+        <tr>
+          <b>경매(참여가능한 모든 계정)</b>
+        </tr>
+        <tr>
+          <table
+            border="1"
+            cellpadding="0"
+            width="200"
+            id="accoutsTable"
+          ></table>
+        </tr>
+      </table>
+      <br />
+      <br />
+      <b>경매 참여하기</b>
+      <table border="0" cellpadding="0" width="200" id="joinAuction">
+        <tr>
+          <td>address:</td>
+          <td><input type="text" id="joinAddr" width="400" /></td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              onclick="joinAuction()"
+            >
+              Join
+            </button>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <table>
+        <tr>
+          <b>참여중인 사람들</b>
+        </tr>
+        <tr>
+          <table
+            border="1"
+            cellpadding="0"
+            width="200"
+            id="auctioneersTable"
+          ></table>
+        </tr>
+      </table>
+      <br />
+      <br />
+      <b>입찰하기</b>&nbsp;(최저제시가: <span id="minPrice"></span> )
+      <table border="0" cellpadding="0" width="200" id="startBid">
+        <tr>
+          <td>address:</td>
+          <td><input type="text" id="bidAddr" width="400" /></td>
+          <td>&nbsp;&nbsp;price:</td>
+          <td><input type="text" id="bidPrice" width="400" /></td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary brn-sm"
+              onclick="startBid()"
+            >
+              Bid
+            </button>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <br />
+      <b>입찰리스트</b>
+      <table border="1" cellpadding="0" width="200" id="list"></table>
+      <br />
+      <br />
+      <br />
+    </div>
+  </body>
+</html>
