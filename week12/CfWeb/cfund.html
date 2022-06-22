@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src = "bower_components/web3/dist/web3.min.js"></script>
+        <script src = "bower_components/jquery/dist/jquery.min.js"></script>
+        <script src = "cfund.js"></script>
+    </head>
+
+    <body>
+        <h3>CFund</h3>
+
+        <table>
+            <tr><b>Crowd Funding</b></tr>
+            <tr><table border="1" cellpadding="2" width="300" id='accountsBalanceTable'></table></tr>
+        </table>
+        
+        <h4>Fund</h4>
+            <td>From:</td> <td><input type="text" id="from"  width="400"/></td>
+            <td>To:</td> <td><input type="text"  id="to" width="400"/> </td>
+            <td>Amount:</td> <td><input type="text" id="amount"/> </td>
+            <td><button onclick="transferCoins()">Transfer</button> </td>
+
+        <h4>Funding Status</h4>
+        <tr><table border="1" id="fundingStatus"></table></tr>
+        
+        <h4>Funding History</h4>
+        <tr><table border="1" id="fundingHistory"></table></tr>
+
+
+    </body>
+</html>
